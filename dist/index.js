@@ -23,6 +23,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
      * */
     function isLeapYear(year) {
         year = Number(year);
+        // 能被4整数但是不能被100整除或者能直接被400整除表示是闰年
         return year % 4 === 0 && year % 100 !== 0 || year % 400 === 0;
     }
 
